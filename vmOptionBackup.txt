@@ -1,0 +1,14 @@
+-Dgraal.PartialUnroll=false
+-Dgraal.LoopUnswitch=false
+-Dgraal.OptScheduleOutOfLoops=false
+-Dgraal.LoopPeeling=false
+-XX:-Inline
+-Dgraal.Dump=Truffle:1
+-XX:TieredStopAtLevel=1
+–XX:-TieredCompilation
+
+-Dgraal.MethodFilter=org.gammaraylab.Main.longIteration
+-Dgraal.MethodFilter=org.gammaraylab.TestCases.useJavaObj,org.gammaraylab.TestCases.javaLoop,org.gammaraylab.TestCases.passingJavaObj,org.gammaraylab.TestCases.returnJavaObj
+-Dgraal.PrintGraph=Network
+-XX:-DoEscapeAnalysis
+-Dgraal.LogFile=graal.log

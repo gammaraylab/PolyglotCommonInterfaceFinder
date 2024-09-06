@@ -1,0 +1,25 @@
+class ComplexNumber:
+    def __init__(self, real, imag):
+        self.real = real
+        self.imag = imag
+
+    def __add__(self, other):
+        cTmp= ComplexNumber(self.real, other.imag)
+        return ComplexNumber(self.real + other.real + cTmp.real, self.imag + other.imag + cTmp.imag)
+
+    def __str__(self):
+        return f"({self.real} + {self.imag}i)"
+
+def addNatural(a:int, b:int):
+    return a+b
+def addComplexLoop(n: int):
+    # Create 4 complex number objects
+    # Run operations n times
+    for i in range(n):
+        c1 = ComplexNumber(i, 3+i)
+        c2 = ComplexNumber(1-i, -4+i)
+        sum_result = c1 + c2
+        naturalSum=addNatural(i,i*i)
+        print(sum_result,":",naturalSum)
+
+    print("-" * 30)
