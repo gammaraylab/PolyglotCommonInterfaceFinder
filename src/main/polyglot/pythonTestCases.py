@@ -16,10 +16,11 @@ def addComplexLoop(n: int):
     # Create 4 complex number objects
     # Run operations n times
     for i in range(n):
-        c1 = ComplexNumber(i, 3+i)
-        c2 = ComplexNumber(1-i, -4+i)
+        c1 = ComplexNumber(i+i*n, n*3+i)
+        c2 = ComplexNumber(n-i, n*4+i)
         sum_result = c1 + c2
+        sum_real= c1.real+c2.real
         naturalSum=addNatural(i,i*i)
-        print(sum_result,":",naturalSum)
+        print(sum_real+naturalSum)
 
     print("-" * 30)

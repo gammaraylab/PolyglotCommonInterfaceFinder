@@ -37,7 +37,11 @@ public class TestCases {
             n--;
         }
     }
-
+    long addAndDivide(long a, long b){
+        long sum= a+b;
+        long result= sum/33;
+        return result;
+    }
     ArrayList<ComplexNum> useJavaObj(long n){
 
         ArrayList<ComplexNum> list= new ArrayList<>();

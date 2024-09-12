@@ -1,9 +1,9 @@
--XX:-Inline
-
 -Dgraal.PartialUnroll=false
 -Dgraal.LoopUnswitch=false
 -Dgraal.OptScheduleOutOfLoops=false
 -Dgraal.LoopPeeling=false
+-XX:-Inline
 
 -Dgraal.Dump=:1
--Dgraal.MethodFilter=TestCases.*
+-Dgraal.MethodFilter=TestCases.*,Main.*
+-Dgraal.PrintGraph=Network

@@ -11,10 +11,22 @@
         TestCases tc= new TestCases();
 
 //        tc.passingJavaObj(c1);
-        ArrayList<ComplexNum> l=tc.useJavaObj(n);
-        System.out.println(l.size());
+//        ArrayList<ComplexNum> l=tc.useJavaObj(n);
+//        System.out.println(l.size());
 //        tc.addComplexLoop(5000);
+        loop();
+
 //        tc.pythonLoop(1000000L);
 //        tc.rubyLoop();
+    }
+
+    static void loop(){
+        TestCases tc= new TestCases();
+        long i=1000000000000L;
+        long res=0;
+        while(i>0){
+            res+=tc.addAndDivide(i,i*i);
+            i--;
+        }
     }
  }
