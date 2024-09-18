@@ -1,9 +1,9 @@
--Dgraal.PartialUnroll=false
--Dgraal.LoopUnswitch=false
--Dgraal.OptScheduleOutOfLoops=false
--Dgraal.LoopPeeling=false
--XX:-Inline
+-Dpolyglot.engine.AllowExperimentalOptions=true
+-Dpolyglot.compiler.TraceInlining=true
+-Dpolyglot.engine.CompilerThreads=1
 
--Dgraal.Dump=:1
--Dgraal.MethodFilter=TestCases.*,Main.*
+-Dpolyglot.log.file=polyglot.log
+
+-Dgraal.Dump=Truffle:1
+
 -Dgraal.PrintGraph=Network

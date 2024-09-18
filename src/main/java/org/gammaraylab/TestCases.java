@@ -81,8 +81,11 @@ void addComplexLoop(long n){
             File file= new File(programFile);
             Source src= Source.newBuilder("python",file).build();
             ctx.eval(src);
-            Value pyLoop= ctx.getBindings("python").getMember("addComplexLoop");
-            pyLoop.execute(n);
+            Value pyLoop= ctx.getBindings("python")
+                    .getMember("addComplexLoop");   //find the method
+            while(n-->0)
+                pyLoop.execute(100);  //call the python loop
+
         }catch (Exception e){
             e.printStackTrace();
         }
