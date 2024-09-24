@@ -1,9 +1,5 @@
 -Dpolyglot.engine.AllowExperimentalOptions=true
--Dpolyglot.compiler.TraceInlining=true
--Dpolyglot.engine.CompilerThreads=1
+
+-Dpolyglot.engine.IterativePartialEscape=true
 
 -Dpolyglot.log.file=polyglot.log
-
--Dgraal.Dump=Truffle:1
-
--Dgraal.PrintGraph=Network
